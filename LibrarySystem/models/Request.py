@@ -23,7 +23,7 @@ class Request(db.Model):
     def to_json(self):
         return dict(id=self.id, user_id=self.user_id, book_id=self.book_id, r_book_title=self.r_book_title,
                     issue_date=self.issue_date,
-                    due_date=self.due_date, qty_ordered=self.qty_ordered, qty_available=self.qty_available)
+                    due_date=self.due_date, qty_available=self.qty_available)
 
     def __repr__(self):
         return '<Request %r>' % self.id
